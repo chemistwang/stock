@@ -1,0 +1,63 @@
+.container {
+    height: 120px;
+    background: #494A5F;
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;
+}
+
+
+
+.buttonBox{
+    position:relative;
+    // float:left;
+    margin:1vw 3vw;
+  }
+  
+
+
+button{
+    width:200px;    height:80px;
+    position:relative;
+    background:rgba(255, 255, 255, .27);
+    text-transform:uppercase;
+    color:white;
+    font-weight:700;
+    letter-spacing:1px;
+    border:none;
+    font-size:15px;
+    outline:none;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  .border{
+    position:absolute;
+    background:none;
+    transition:all .5s ease-in-out;
+}
+
+
+
+.border:nth-of-type(1){
+    top:0;
+    left:0;
+    border-left:1px solid white;
+    border-top:1px solid white;
+    width:30px;
+    height:30px;
+  }
+  
+.border:nth-of-type(2){
+    bottom:0;
+    right:0;
+    border-right:1px solid white;
+    border-bottom:1px solid white;
+    width:30px;
+    height:30px;
+  }
+  
+  .buttonBox:hover .border{
+    width:205px;
+    height:85px;
+  }

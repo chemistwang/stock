@@ -1,0 +1,49 @@
+.css {
+  ul {
+    position: relative;
+    li {
+      background-color: #279fcf;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    margin: 2px;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+    position: relative;
+    &:first-child {
+      -webkit-animation: rotate 1s 0s cubic-bezier(.7, -.13, .22, .86) infinite;
+              animation: rotate 1s 0s cubic-bezier(.7, -.13, .22, .86) infinite; }
+      &::before, &::after {
+        background-color: #279fcf;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        margin: 2px;
+        content: "";
+        position: absolute;
+        opacity: 0.8;
+      }
+      &::before {
+        top: 0px;
+      left: -28px;
+      }
+      &::after {
+        top: 0px;
+      left: 25px;
+      }
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg) scale(1);
+              transform: rotate(0deg) scale(1); }
+  
+    50% {
+      -webkit-transform: rotate(180deg) scale(0.6);
+              transform: rotate(180deg) scale(0.6); }
+  
+    100% {
+      -webkit-transform: rotate(360deg) scale(1);
+              transform: rotate(360deg) scale(1); } }
+}
